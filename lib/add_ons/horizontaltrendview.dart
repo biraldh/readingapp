@@ -28,7 +28,7 @@ Widget audiobookView(String url, String name) {
           ),
         ),
       ),
-      Text(name, style: const TextStyle(fontSize: 20, overflow: TextOverflow.ellipsis),)
+      Flexible(child: Text(name, style: const TextStyle(fontSize: 20),softWrap: true,))
     ],
   );
 }
